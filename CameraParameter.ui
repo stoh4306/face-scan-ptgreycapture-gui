@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtCamParamDlgClass</class>
+ <widget class="QDialog" name="QtCamParamDlgClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>517</width>
+    <height>373</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
+  <widget class="QGroupBox" name="Cam1ParamBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>501</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>MasterParameter</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>491</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout" columnminimumwidth="0,0,80,0,0,0,0">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Value</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="5">
+      <widget class="QCheckBox" name="gammaOnOff">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Label</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>On/Off</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="6">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>One Push</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Auto</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="2">
+      <widget class="QDoubleSpinBox" name="WBBlueBox">
+       <property name="decimals">
+        <number>0</number>
+       </property>
+       <property name="maximum">
+        <double>1023.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="6">
+      <widget class="QCheckBox" name="shutterOnePush">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="BrightnessLabel_8">
+       <property name="text">
+        <string>gain</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QDoubleSpinBox" name="gainBox">
+       <property name="decimals">
+        <number>3</number>
+       </property>
+       <property name="minimum">
+        <double>0.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>47.994000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="4">
+      <widget class="QCheckBox" name="shutterAuto">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="4">
+      <widget class="QCheckBox" name="gainAuto">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QSlider" name="gainSlider">
+       <property name="maximum">
+        <number>1000</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="6">
+      <widget class="QCheckBox" name="gainOnePush">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="BrightnessLabel_9">
+       <property name="text">
+        <string>FrameRate</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="shutter">
+       <property name="text">
+        <string>shutter</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QSlider" name="shutterSlider">
+       <property name="maximum">
+        <number>1000</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QDoubleSpinBox" name="shutterBox">
+       <property name="decimals">
+        <number>3</number>
+       </property>
+       <property name="minimum">
+        <double>0.006000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>31981.669999999998254</double>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QSlider" name="BrightnessSlider">
+       <property name="maximum">
+        <number>1000</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="BrightnessLabel_2">
+       <property name="text">
+        <string>exposure</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QDoubleSpinBox" name="BrightnessBox">
+       <property name="decimals">
+        <number>3</number>
+       </property>
+       <property name="maximum">
+        <double>12.476000000000001</double>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="BrightnessLabel">
+       <property name="text">
+        <string>Brightness</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="BrightnessLabel_3">
+       <property name="text">
+        <string>sharpness</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QSlider" name="sharpnessSlider">
+       <property name="maximum">
+        <number>1000</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QDoubleSpinBox" name="hueBox">
+       <property name="decimals">
+        <number>3</number>
+       </property>
+       <property name="minimum">
+        <double>-180.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>180.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="BrightnessLabel_4">
+       <property name="text">
+        <string>hue</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="BrightnessLabel_5">
+       <property name="text">
+        <string>saturation</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QSlider" name="saturationSlider">
+       <property name="maximum">
+        <number>1000</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QSlider" name="hueSlider">
+       <property name="maximum">
+        <number>1000</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="BrightnessLabel_6">
+       <property name="text">
+        <string>gamma</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QDoubleSpinBox" name="gammaBox">
+       <property name="decimals">
+        <number>3</number>
+       </property>
+       <property name="minimum">
+        <double>0.500000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>3.999000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QDoubleSpinBox" name="sharpnessBox">
+       <property name="decimals">
+        <number>0</number>
+       </property>
+       <property name="maximum">
+        <double>4096.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QDoubleSpinBox" name="saturationBox">
+       <property name="decimals">
+        <number>3</number>
+       </property>
+       <property name="minimum">
+        <double>0.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>400.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QSlider" name="gammaSlider">
+       <property name="maximum">
+        <number>1000</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QSlider" name="exposureSlider">
+       <property name="maximum">
+        <number>1000</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="5">
+      <widget class="QCheckBox" name="exposureOnOff">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="6">
+      <widget class="QCheckBox" name="exposureOnePush">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QDoubleSpinBox" name="exposureBox">
+       <property name="decimals">
+        <number>3</number>
+       </property>
+       <property name="minimum">
+        <double>-7.585000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>2.414000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QCheckBox" name="exposureAuto">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="QSlider" name="WBBlueSlider">
+       <property name="maximum">
+        <number>1000</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="BrightnessLabel_11">
+       <property name="text">
+        <string>W.B(Blue)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="2">
+      <widget class="QDoubleSpinBox" name="WBRedBox">
+       <property name="decimals">
+        <number>0</number>
+       </property>
+       <property name="maximum">
+        <double>1023.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="4">
+      <widget class="QCheckBox" name="WBAuto">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="5">
+      <widget class="QCheckBox" name="WBOnOff">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="BrightnessLabel_10">
+       <property name="text">
+        <string>W.B(Red)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="6">
+      <widget class="QCheckBox" name="WBOnePush">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QSlider" name="frameRateSlider">
+       <property name="maximum">
+        <number>1000</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="2">
+      <widget class="QDoubleSpinBox" name="frameRateBox">
+       <property name="decimals">
+        <number>3</number>
+       </property>
+       <property name="minimum">
+        <double>1.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>75.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="4">
+      <widget class="QCheckBox" name="frameRateAuto">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="5">
+      <widget class="QCheckBox" name="frameRateOnOff">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QSlider" name="WBRedSlider">
+       <property name="maximum">
+        <number>1000</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>%</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>EV</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>deg</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>%</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="3">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>ms</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="3">
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>dB</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="3">
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>fps</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>BrightnessSlider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>QtCamParamDlgClass</receiver>
+   <slot>BrightnessSlider()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>134</x>
+     <y>54</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>26</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exposureSlider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>QtCamParamDlgClass</receiver>
+   <slot>ExposureSlider()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>210</x>
+     <y>88</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>39</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sharpnessSlider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>QtCamParamDlgClass</receiver>
+   <slot>SharpnessSlider()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>206</x>
+     <y>116</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>53</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hueSlider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>QtCamParamDlgClass</receiver>
+   <slot>HueSlider()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>220</x>
+     <y>144</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>71</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saturationSlider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>QtCamParamDlgClass</receiver>
+   <slot>SaturationSlider()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>168</x>
+     <y>168</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>81</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gammaSlider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>QtCamParamDlgClass</receiver>
+   <slot>GammaSlider()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>224</x>
+     <y>196</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>shutterSlider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>QtCamParamDlgClass</receiver>
+   <slot>ShutterSlider()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>224</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gainSlider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>QtCamParamDlgClass</receiver>
+   <slot>GainSlider()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>192</x>
+     <y>259</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>130</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>frameRateSlider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>QtCamParamDlgClass</receiver>
+   <slot>FrameRateSlider()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>171</x>
+     <y>280</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>141</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>WBRedSlider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>QtCamParamDlgClass</receiver>
+   <slot>WBRSlider()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>315</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>161</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>WBBlueSlider</sender>
+   <signal>sliderMoved(int)</signal>
+   <receiver>QtCamParamDlgClass</receiver>
+   <slot>WBBSlider()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>206</x>
+     <y>333</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>176</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BrightnessBox</sender>
+   <signal>editingFinished()</signal>
+   <receiver>QtCamParamDlgClass</receiver>
+   <slot>BrightnessBox()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>283</x>
+     <y>64</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>46</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exposureBox</sender>
+   <signal>editingFinished()</signal>
+   <receiver>QtCamParamDlgClass</receiver>
+   <slot>ExposureBox()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>299</x>
+     <y>91</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>60</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sharpnessBox</sender>
+   <signal>editingFinished()</signal>
+   <receiver>QtCamParamDlgClass</receiver>
+   <slot>SharpnessBox()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>272</x>
+     <y>112</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>81</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hueBox</sender>
+   <signal>editingFinished()</signal>
+   <receiver>QtCamParamDlgClass</receiver>
+   <slot>HueBox()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>308</x>
+     <y>134</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>116</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saturationBox</sender>
+   <signal>editingFinished()</signal>
+   <receiver>QtCamParamDlgClass</receiver>
+   <slot>SaturationBox()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>283</x>
+     <y>165</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>144</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gammaBox</sender>
+   <signal>editingFinished()</signal>
+   <receiver>QtCamParamDlgClass</receiver>
+   <slot>GammaBox()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>269</x>
+     <y>193</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>172</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>shutterBox</sender>
+   <signal>editingFinished()</signal>
+   <receiver>QtCamParamDlgClass</receiver>
+   <slot>ShutterBox()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>280</x>
+     <y>224</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>221</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gainBox</sender>
+   <signal>editingFinished()</signal>
+   <receiver>QtCamParamDlgClass</receiver>
+   <slot>GainBox()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>308</x>
+     <y>249</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>246</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>frameRateBox</sender>
+   <signal>editingFinished()</signal>
+   <receiver>QtCamParamDlgClass</receiver>
+   <slot>FrameRateBox()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>308</x>
+     <y>287</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>270</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>WBRedBox</sender>
+   <signal>editingFinished()</signal>
+   <receiver>QtCamParamDlgClass</receiver>
+   <slot>WBRBox()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>297</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>284</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>WBBlueBox</sender>
+   <signal>editingFinished()</signal>
+   <receiver>QtCamParamDlgClass</receiver>
+   <slot>WBBBox()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>280</x>
+     <y>344</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>BrightnessSlider()</slot>
+  <slot>ExposureSlider()</slot>
+  <slot>SharpnessSlider()</slot>
+  <slot>HueSlider()</slot>
+  <slot>SaturationSlider()</slot>
+  <slot>GammaSlider()</slot>
+  <slot>ShutterSlider()</slot>
+  <slot>GainSlider()</slot>
+  <slot>FrameRateSlider()</slot>
+  <slot>WBRSlider()</slot>
+  <slot>WBBSlider()</slot>
+  <slot>BrightnessBox()</slot>
+  <slot>ExposureBox()</slot>
+  <slot>SharpnessBox()</slot>
+  <slot>HueBox()</slot>
+  <slot>SaturationBox()</slot>
+  <slot>GammaBox()</slot>
+  <slot>ShutterBox()</slot>
+  <slot>GainBox()</slot>
+  <slot>FrameRateBox()</slot>
+  <slot>WBRBox()</slot>
+  <slot>WBBBox()</slot>
+ </slots>
+</ui>

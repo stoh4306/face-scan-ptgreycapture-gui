@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtPointGreyCaptureGuiClass</class>
+ <widget class="QMainWindow" name="QtPointGreyCaptureGuiClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1073</width>
+    <height>981</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>301</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>PointGreyCapture</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="sizeConstraint">
+     <enum>QLayout::SetDefaultConstraint</enum>
+    </property>
+    <item>
+     <widget class="QGroupBox" name="ParameterBox1">
+      <property name="minimumSize">
+       <size>
+        <width>301</width>
+        <height>463</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>301</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="6" column="0" rowspan="2" colspan="7">
+          <widget class="Line" name="line">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2">
+          <widget class="QLabel" name="label_15">
+           <property name="text">
+            <string>Index</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0" colspan="7">
+          <widget class="Line" name="line_3">
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="lineWidth">
+            <number>1</number>
+           </property>
+           <property name="midLineWidth">
+            <number>0</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_14">
+           <property name="text">
+            <string>Index</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="4" colspan="3">
+          <widget class="QLineEdit" name="DurationText">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" rowspan="2" colspan="2">
+          <widget class="QPushButton" name="pushButton">
+           <property name="text">
+            <string>Single Frame
+Capture</string>
+           </property>
+           <property name="autoDefault">
+            <bool>true</bool>
+           </property>
+           <property name="default">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="5" rowspan="2" colspan="2">
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="text">
+            <string>Camera
+Option</string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="0" colspan="7">
+          <widget class="Line" name="line_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="4" rowspan="3">
+          <widget class="Line" name="line_4">
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2" colspan="3">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Number of shots</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="3">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>%</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="1" colspan="2">
+          <widget class="QLineEdit" name="ZoomEdit">
+           <property name="text">
+            <string>100</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="6">
+          <widget class="QLineEdit" name="filePrefixText">
+           <property name="placeholderText">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0" rowspan="3" colspan="2">
+          <widget class="QPushButton" name="SeqCapture">
+           <property name="text">
+            <string>Sequence
+Capture</string>
+           </property>
+           <property name="default">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2" colspan="2">
+          <widget class="QLabel" name="label_18">
+           <property name="text">
+            <string>Duration(sec)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="0" colspan="3">
+          <widget class="QLabel" name="label_17">
+           <property name="text">
+            <string>Working Directory</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="6">
+          <widget class="QLineEdit" name="CaptureFrameLen">
+           <property name="placeholderText">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="6">
+          <widget class="QPushButton" name="pushButton_5">
+           <property name="text">
+            <string>Browse</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="6">
+          <widget class="QLineEdit" name="seqPrefixText"/>
+         </item>
+         <item row="12" column="0" colspan="6">
+          <widget class="QLineEdit" name="DirectoryText"/>
+         </item>
+         <item row="9" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Zoom</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QListWidget" name="CamListWidget">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="dragEnabled">
+          <bool>true</bool>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::NoSelection</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPlainTextEdit" name="LogText">
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="ViewBox">
+      <property name="title">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="QtPointGreyCaptureGui.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>QtPointGreyCaptureGuiClass</receiver>
+   <slot>FireButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>96</x>
+     <y>44</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>121</x>
+     <y>307</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>QtPointGreyCaptureGuiClass</receiver>
+   <slot>OptionShow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>254</x>
+     <y>180</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>325</x>
+     <y>332</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SeqCapture</sender>
+   <signal>clicked()</signal>
+   <receiver>QtPointGreyCaptureGuiClass</receiver>
+   <slot>SeqButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>67</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>325</x>
+     <y>129</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>QtPointGreyCaptureGuiClass</receiver>
+   <slot>Path()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>281</x>
+     <y>250</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>325</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CaptureFrameLen</sender>
+   <signal>editingFinished()</signal>
+   <receiver>QtPointGreyCaptureGuiClass</receiver>
+   <slot>NosChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>267</x>
+     <y>84</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>366</x>
+     <y>88</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DirectoryText</sender>
+   <signal>editingFinished()</signal>
+   <receiver>QtPointGreyCaptureGuiClass</receiver>
+   <slot>PathText()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>208</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>402</x>
+     <y>289</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ZoomEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>QtPointGreyCaptureGuiClass</receiver>
+   <slot>zoomEdit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>177</x>
+     <y>200</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>326</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CamListWidget</sender>
+   <signal>itemClicked(QListWidgetItem*)</signal>
+   <receiver>QtPointGreyCaptureGuiClass</receiver>
+   <slot>ViewOnlyCheckedView()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>174</x>
+     <y>303</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>314</x>
+     <y>3</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CamListWidget</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>QtPointGreyCaptureGuiClass</receiver>
+   <slot>ViewOnlyCheckedView()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>253</x>
+     <y>412</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>505</x>
+     <y>3</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>FireButton()</slot>
+  <slot>OffButton()</slot>
+  <slot>FileCaptureButton()</slot>
+  <slot>OptionShow()</slot>
+  <slot>SeqButton()</slot>
+  <slot>Path()</slot>
+  <slot>NosChanged()</slot>
+  <slot>PathText()</slot>
+  <slot>ChangedPreviewCheck(bool)</slot>
+  <slot>zoomEdit()</slot>
+  <slot>ViewOnlyCheckedView()</slot>
+ </slots>
+</ui>
